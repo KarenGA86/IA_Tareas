@@ -36,24 +36,3 @@ mismo_departamento(X, Y) :-   % Dos empleados distintos pertenecen al mismo depa
     empleado(X, Departamento),
     empleado(Y, Departamento),
     X \= Y.
-
-
-
-
-
-
-
-% Consultas de ejemplo para ejecutar en la consola de SWI-Prolog
-% ?- empleado(luis, seguridad).
-% true.
-%
-% ?- acceso_alto(X).
-% X = luis ;
-% X = maria ;
-% X = ana.
-%
-% ?- mismo_departamento(luis, ana).
-% true.
-%
-% ?- mismo_departamento(luis, maria).
-% false.
